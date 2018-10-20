@@ -60,8 +60,6 @@ pred_proba = model.predict_broba(arrTestFeatures)
 pred = model.predict(arrTestFeatures)
 ```
 
-
-
 ## naive-bayes : GaussianNB - classification
 ```python
 from sklearn.naive_bayes import GaussianNB
@@ -69,3 +67,121 @@ model = GaussianNB().fit(arrTrainFeatures, arrTrainLabels)
 pred_proba = model.predict_broba(arrTestFeatures)
 pred = model.predict(arrTestFeatures)
 ```
+
+## SVM - Classification
+```
+from sklearn.svm import SVC
+model = SVC(
+    C=10.0
+   ,gamma=10000
+   ,kernal='rbf'
+   ).fit(arrTrainFeatures, arrTrainLabels)
+pred = model.predict(arrTestFeatures)
+```
+
+## SVM - regression
+```
+from sklearn.svm import SVR
+svr_rbf = SVR(kernel='rbf', C=1e3, gamma=0.1)
+svr_lin = SVR(kernel='linear', C=1e3)
+svr_poly = SVR(kernel='poly', C=1e3< degree=2)
+pred_rbf = svr_rbf.fit(featuresTrain, labelTrain).predict(featuresTrain)
+pred_lin = svr_lin.fit(featuresTrain, labelTrain).predict(featuresTrain)
+pred_poly = svr_poly.fit(featuresTrain, labelTrain).predict(featuresTrain)
+```
+
+### Random Forest - Classifacation
+```
+from sklearn.ensemble import RandomForestClassifier
+model = RandomForestClassifier().fit(arrTrainFeatures, arrTrainLabels)
+predTestLabels = model.predict(arrTestFeatures)
+```
+
+### Random Forest - Regression
+```
+from sklearn.ensemble import RandomForestRegressor
+model = RandomForestClassifier().fit(arrTrainFeatures, arrTrainLabels)
+predTestLabels = model.predict(arrTestFeatures)
+```
+
+### k-NN - Classifacation
+```
+from sklearn import neighbors
+model = neighbors.KNeighborsClassifier(
+    n_neighbors = n_neighbors
+   ,weights='distance'
+    ).fit(dfTrain[['X3','X4','X5']], dfTrain['Y2'])
+predTestLabels = model.predict(dfTest[['X3','X4','X5']])
+```
+
+### k-NN - Regression
+```
+from sklearn import neighbors
+model = neighbors.KNeighborsRegressor(
+    n_neighbors = n_neighbors
+   ,weights='distance'
+   ,p=2
+    ).fit(dfTrain[['X3','X4','X5']], dfTrain['Y1'])
+predTestLabels = model.predict(dfTest[['X3','X4','X5']])
+```
+
+## k-NN - Clustering
+```
+from sklearn import neighbors
+model = neighbors.KNeighborsRegressor().fit(dfTrain[['X1','X2','X3']], dfTrain['Y1'])
+distances, indices = model.kneighbors(dfTest[['X1','X2','X3']])
+```
+
+## glm - ridge
+```
+import sklearn import linear_model as lm
+glm_ridge = lm.Ridge(alpha=0)
+            .fit(
+                dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']]
+               ,dfLabel['Y1']
+predLabelTrain = glm_ridge.predict(dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']])
+r2 = r2_score(dfTrain['Y'},predLabelTrain)
+ridge_coef = Series(
+    glm_ridge.coef_
+   ,dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']].columns
+   ).sort_values()
+```
+## glm - lasso
+```
+import sklearn import linear_model as lm
+import sklearn.metrics import r2_score
+glm_lasso = lm.Lasso(alpha=0)
+            .fit(
+                dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']]
+               ,dfLabel['Y1']
+predLabelTrain = glm_lasso.predict(dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']])
+r2 = r2_score(dfTrain['Y'},predLabelTrain)
+ridge_coef = Series(
+    glm_ridge.coef_
+   ,dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']].columns
+   ).sort_values()
+```
+## glm - elastic net
+```
+import sklearn import linear_model as ElasticNet
+import sklearn.metrics import r2_score
+glm_ridge = lm.Ridge(alpha=0.1, l1_ratio=0.7)
+            .fit(
+                dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']]
+               ,dfLabel['Y1']
+predLabelTrain = glm_ridge.predict(dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']])
+r2 = r2_score(dfTrain['Y'},predLabelTrain)
+ridge_coef = Series(
+    glm_ridge.coef_
+   ,dfTrain[['X1','X2','X3','X4','X5','X6','X7','X8','X9','X10','X11']].columns
+   ).sort_values()
+```
+
+## kmeans - clustering
+```
+from sklearn.cluster import KMeans
+```
+
+
+
+
