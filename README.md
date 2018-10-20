@@ -231,7 +231,7 @@ with tf.Session() as sess:
             print(step, step_cost)
         predicted_label = sess.run(Hypothesis, feed_dict={x:feature})
         print(predicted_label)
-        print('Weight1 :{} ㅠㅑㅁㄴ1 {}'.format(sess.run(W1), sess.run(b1)))
+        print('Weight1 :{} Bias 1 {}'.format(sess.run(W1), sess.run(b1)))
         correct_prediction = tf.equal(tf.round(Hypothesis), label)
         accuracy_rate = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
         print('accuracy rate : ', sess.run(accuracy_rate, feed_dict={x:feature, y:label})
