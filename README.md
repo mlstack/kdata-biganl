@@ -34,7 +34,7 @@ dfTestLabelsPred = model.prediction(dfTestFeatures)
 ```python
 from sklearn.tree import DecisionTreeRegressor
 # model = DecisionTreeRegressor()
-model = DecisionTreeClassifier(
+model = DecisionTreeRegressor(
     criterion = 'mse' # mean squared error
    ,max_depth = 2)
    .fit(dfTrainFeatures, dfTrainLabels)
