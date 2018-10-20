@@ -41,7 +41,31 @@ model = DecisionTreeClassifier(
 dfTestLabelsPred = model.prediction(dfTestFeatures)
 ```
 
-## naive-bayes - classification
+## naive-bayes : Bernoulli - classification
+```
+from sklearn.naive_bayes import BernoulliNB
+model = BernoulliNB(
+    alpha=1.0
+   ,binarrize = 0.0
+   ,class_prior=None
+   ,fit_prior=True
+   ).fit(arrTrainFeatures, arrTrainLabels)
+pred = model.predict(arrTestFeatures)
+```
+## naive-bayes : Multinomial - classification
+```python
+from sklearn.naive_bayes import MultinomialNB
+model = MultinomialNB().fit(arrTrainFeatures, arrTrainLabels)
+pred_proba = model.predict_broba(arrTestFeatures)
+pred = model.predict(arrTestFeatures)
 ```
 
+
+
+## naive-bayes : GaussianNB - classification
+```python
+from sklearn.naive_bayes import GaussianNB
+model = GaussianNB().fit(arrTrainFeatures, arrTrainLabels)
+pred_proba = model.predict_broba(arrTestFeatures)
+pred = model.predict(arrTestFeatures)
 ```
