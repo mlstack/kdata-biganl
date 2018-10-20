@@ -1,5 +1,12 @@
 # kdata-biganl
 
+## Anaconda Upgrade
+```
+$ python -m pip install –upgrade pip
+```
+
+
+
 ## numpy
 - 메모리에 올라온 데이터 배열(array)의 processing
     - 가로세로바꿈
