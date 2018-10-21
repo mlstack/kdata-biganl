@@ -46,7 +46,7 @@ dfTestLabelsPred = model.prediction(dfTestFeatures)
 from sklearn.naive_bayes import BernoulliNB
 model = BernoulliNB(
     alpha=1.0
-   ,binarrize = 0.0
+   ,binarize = 0.0
    ,class_prior=None
    ,fit_prior=True
    ).fit(arrTrainFeatures, arrTrainLabels)
