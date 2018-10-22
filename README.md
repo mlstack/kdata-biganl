@@ -209,6 +209,8 @@ y = np.array([
 distance, path = fastdtw(x,y,dist=euclidean)
 print(distance)
 ```
+## word2vec
+- https://radimrehurek.com/gensim/models/word2vec.html#gensim.models.word2vec.Word2Vec
 
 ## tensorflow - logistic regression
 ```
