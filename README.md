@@ -216,7 +216,7 @@ print(distance)
 ```
 import tensorflow as tf
 x = tf.placeholder(tf.float32, shape=[row,col_x], name="x-feature")
-y = tf.placeholder(tf.float32, shape=[roq,col_y], name="y-label")
+y = tf.placeholder(tf.float32, shape=[row,col_y], name="y-label")
 W1 = tf.Variable(tf.random_uniform([col_x, 1],-1,1), name="Weight1")
 b1 = tf.Variable(tf.zeros([1], name="bias1")
 Hypothesis = tf.sigmoid(tf.matmul(x,W1) + b1)
