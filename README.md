@@ -213,7 +213,7 @@ print(distance)
 - https://radimrehurek.com/gensim/models/word2vec.html#gensim.models.word2vec.Word2Vec
 
 ## XOR Problem in deep learning history
-- https://www.youtube.com/watch?v=aygSMgK3BEM&feature=youtu.be
+- The Thinking Machine (Artificial Intelligence in the 1960s) https://www.youtube.com/watch?v=aygSMgK3BEM&feature=youtu.be
 
 ## tensorflow - Single Layer Perceptron
 
