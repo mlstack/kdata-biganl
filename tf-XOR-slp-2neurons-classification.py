@@ -1,7 +1,7 @@
 #!/usr/bin/env /c/Apps/Anaconda3/python
 """
-[Title] CNN - Tensorflow Application - Mnist
-[Code] tf-MNIST-cnn-classificaton.py
+[Title] XOR Single Layer Perceptron - Tensorflow Application
+[Code] tf-XOR-slp-classificaton.py
 [Author] 이이백(Yibeck.Lee@gmail.com)
 """
 import tensorflow as tf 
