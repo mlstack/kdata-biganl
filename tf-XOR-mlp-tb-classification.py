@@ -1,8 +1,8 @@
 #!/usr/bin/env /c/Apps/Anaconda3/python
 #_*_coding:utf-8_*_
 """
-[Title] CNN - Tensorflow Application - Mnist
-[Code] tf-MNIST-cnn-classificaton.py
+[Title] XOR Multi Layer Perceptron - Tensorflow/Tensorboard Application
+[Code] tf-XOR-mlp-classificaton.py
 [Author] 이이백(Yibeck.Lee@gmail.com)
 """
 import tensorflow as tf 
@@ -35,11 +35,17 @@ cost = tf.reduce_mean(
 learning_rate = 0.1
 optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
 # optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)
+correct_prediction = tf.equal(tf.round(Hypothesis),label)
+accuracy_rate = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+
 init = tf.global_variables_initializer()
 print(init)
 with tf.Session() as sess:
-	tf.summary.histogram("Hidden_layer_wights", W1)
 	
+	tf.summary.histogram("W1", W1)
+	tf.summary.histogram("B1", B1)
+	tf.summary.scalar("Cost", cost)
+	tf.summary.scalar("Accuracy Rate", accuracy_rate)
 	summary = tf.summary.merge_all()
 	tb_log = tf.summary.FileWriter(r"./tb-XOR-mlp", sess.graph)
 	sess.run(init)
@@ -52,9 +58,9 @@ with tf.Session() as sess:
 			# print("[Epoch-Cost] ", epoch+1, epoch_cost)
 			# Weight1 = W1.eval(sess)
 			# Bias1 = B1.eval(sess)
-			correct_prediction = tf.equal(tf.round(Hypothesis),label)
-			accuracy_rate = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 			print(epoch+1,"epoch-cost=", epoch_cost, "accuracy rate=", sess.run(accuracy_rate, feed_dict={X:feature, Y:label}))
+			summ = sess.run(summary, feed_dict={X:feature, Y:label})
+			tb_log.add_summary(summ, epoch)			
 	print(epoch+1,"epoch-cost=", epoch_cost, "accuracy rate=", sess.run(accuracy_rate, feed_dict={X:feature, Y:label}))
 	pred = sess.run(Hypothesis, feed_dict={X:[[0,0],[0,1],[1,0],[1,1]]})
 	for i in range(4):
