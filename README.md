@@ -212,32 +212,9 @@ print(distance)
 ## word2vec
 - https://radimrehurek.com/gensim/models/word2vec.html#gensim.models.word2vec.Word2Vec
 
-## tensorflow - logistic regression
-```
-import tensorflow as tf
-x = tf.placeholder(tf.float32, shape=[row,col_x], name="x-feature")
-y = tf.placeholder(tf.float32, shape=[row,col_y], name="y-label")
-W1 = tf.Variable(tf.random_uniform([col_x, 1],-1,1), name="Weight1")
-b1 = tf.Variable(tf.zeros([1], name="bias1")
-Hypothesis = tf.sigmoid(tf.matmul(x,W1) + b1)
-cost = tf.reduce_mean(-y*tf.log(Hypothesis) - (1-y)*tf.log(1-Hypothesis))
-learning_rate = 0.1
-optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
-init = tf.global_variable_initializer()
-with tf.Session() as sess:
-    sess.run(init)
-    for step in range(10001):
-        step_opt = sess.run(optimizer, feed_dixt({x:feature, y=label})
-        if step % 1000 == 0:
-            step_cost = sess.run(cost, feed_dict = {x:feature, y:label})
-            print(step, step_cost)
-        predicted_label = sess.run(Hypothesis, feed_dict={x:feature})
-        print(predicted_label)
-        print('Weight1 :{} Bias 1 {}'.format(sess.run(W1), sess.run(b1)))
-        correct_prediction = tf.equal(tf.round(Hypothesis), label)
-        accuracy_rate = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
-        print('accuracy rate : ', sess.run(accuracy_rate, feed_dict={x:feature, y:label})
-```
+## XOR Problem in deep learning history
+- https://www.youtube.com/watch?v=aygSMgK3BEM&feature=youtu.be
+
 ## tensorflow - Single Layer Perceptron
 
 ## tensorflow - Multi Layer Perceptron
