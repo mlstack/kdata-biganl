@@ -1,4 +1,4 @@
-# Knowledge for Datascientist 
+# Knowledge for Data Scientist 
 ## 통계
 - Probability
 - Distribution
