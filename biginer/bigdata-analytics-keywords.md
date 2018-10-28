@@ -1,10 +1,10 @@
 # Knowledge for Data Scientist 
-## 통계
+## Statistics
 - Probability
 - Distribution
   - t, Z, F, Chi
   - 통계량의 유의성 : P-Value
-- 기술통계
+- 기술통계(Descriptive Statistics)
   - sum, mean, median, mode, min, max, standard deviation, variance
   - skew, kurtosis
   - percentile : P1 ~ P100 
