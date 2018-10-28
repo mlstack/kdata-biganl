@@ -1,7 +1,7 @@
 # Knowledge for Datascientist 
 ## 통계
-- 기술통계
-- 분포
+- Probability
+- Distribution
   - t, Z, F, Chi
   - 통계량의 유의성 : P-Value
 - 기술통계
