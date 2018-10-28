@@ -29,8 +29,7 @@
 ```
 (base) C:\Users\User> pip install graphviz
 ```
-
-## graphviz.msi 다운로드 + 설치
+### graphviz.msi 다운로드 + 설치
 -  link : https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.msi
 
 - graphviz-2.38의 설치 딜렉토리와 환경설정
