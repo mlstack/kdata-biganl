@@ -20,6 +20,18 @@
 (base) C:\Users\User> conda upgrade conda
 (base) C:\Users\User> conda upgrade --all
 ```
+## Tensorflow 설치
+```
+(base) C:\Users\User> pip install --ignore-installed--upgrade tensorflow
+```
+
+## Tree Map을 그리기 위한 graphviz 설치(Windows환경)
+```
+(base) C:\Users\User> pip install graphviz
+```
+
+## graphviz.msi 다운로드 + 설치
+-  link : https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.msi
 
 ## install pandas, Numpy, scipy
 ```
