@@ -5,7 +5,12 @@
 (base) C:\Users\User> conda --version
 ```
 
-## Check Conda List
+## conda 설치 위치 확인
+```
+(base) C:\Users\User> where conda
+```
+
+## 패키지 설치 목록
 ```
 (base) C:\Users\User> conda list
 ```
