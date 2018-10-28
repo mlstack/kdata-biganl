@@ -19,18 +19,51 @@
     - Ridge (regression)
     - Elastic-Net (regression)
   - Logistic Regression
+  - (and more)
 # Machine Learning
 - Supervised Modeling
-  - 
+  - Decision Tree
+  - Random Forest
+  - Support Vector Machine
+  - k-NN
+  - Naive Baysian
+  - (and more)
 - Unsupervised Modeling
+  - k-Means
+  - mahalanobis distance
+  - dtw
+  - jaccard
+  - (and more)
 # Deep Learning
+- Perceptron
+- Single-Layer Perceptron
+- Multi-Layer Perceptron
+- Convolutional Neural Network
+- Recurrent Neural Network
+- Long Short Term Memory
+- Auto Encoder
+- Restricted Boltzmann Machine
+- Reinforcement Learning
+- Q-Learning
+- Generative Adversarial Network
 
 # Model Evaluation of [Statistics, Machine Learning, Deep Learning]
 
+# Data Processing/Management
+- DBMS 
+- SQL
+- Database Modeling
+
+# Analytics Packages
+- Spark
+  - main :  Data Handling, Machine Learning
+  - secondary :  Neural Network
+  - API : Scala, Java, Python, R
+- Tensorflow
+  - main : Deep Learning
+  - secondary : machine learning
+  - API : Python, Java, Javascript, R(rstudio에서 지원)
 
 # Big Data
-
-# Data Processing
-- DBMS 
+- Hadoop
 - 
-
