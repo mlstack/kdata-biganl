@@ -33,24 +33,8 @@
 ## graphviz.msi 다운로드 + 설치
 -  link : https://graphviz.gitlab.io/_pages/Download/windows/graphviz-2.38.msi
 
-## install pandas, Numpy, scipy
-```
-(base) C:\Users\User> conda install pandas
-(base) C:\Users\User> conda install numpy
-(base) C:\Users\User> conda install scipy
-```
-## remove numpy
-```
-(base) C:\Users\User> conda remove numpy
-```
-## install tensorflow
-```
-(base) C:\Users\User> conda instal tensortflow
-```
-(또는)
-```
-(base) C:\Users\User> pip install tensorflow
-```
-
-
+- graphviz-2.38의 설치 딜렉토리와 환경설정
+  - 정확하게 설치가 되지 않으면 Decision Tree Graph를 조회 오류가 발생합니다.
+  - 설치 Directory 추천 : C:\Apps\graphviz-2.38
+  - windows path : C:\Apps\graphviz-2.38\bin
 
