@@ -60,23 +60,22 @@
   - Bootstrap
 
 ## Data Management
-- DBMS 
-- Database Modeling
-- MongoDB, Casandra, Redis
-- SQL, NoSQL
+- - DBMS 
+- - Database Modeling
+- - MongoDB, Casandra, Redis
+- - SQL, NoSQL
 
 ## Data Processing
-- connect Database
-- read flat file(csv, tsv, txt, json, parquet, ...)
-- make DataFrame
-  - R : data.Frame
-  - Python : pandas
-  - Scala, Java : Spark SQL
-- Array, Matrix, Tensor
-  - 
-- Transpose
+- - connect Database
+- - read flat file(csv, tsv, txt, json, parquet, ...)
+- - make DataFrame
+    - R : data.Frame
+    - Python : pandas
+    - Scala, Java : Spark SQL
+- - Array, Matrix, Tensor
+  - Transpose
 - Linear Algebra
-  - matrix multiplication : Weight * Festures + Biax
+  - matrix multiplication : Weight * Festures + Bias
 - Algorithm Coding for Any Mathmatical Function
 
 ## Analytics Packages
@@ -94,7 +93,6 @@
 - CNTK
   - main : Deep Learning
   - API : Python, CSharp, Java, C++
-- (and more) Caffe, Torch, Chiner, ....
 - Deeplearning4j
   - main : Deeplearning
   - secondary : descriptive statistics
@@ -102,6 +100,7 @@
 - Mahout 
   - main : Machine Learning(on Hadoop)
   - API : Java
+- (and more) Caffe, Torch, Chiner, ....
 
 # Model Import/Export
 - onnx
