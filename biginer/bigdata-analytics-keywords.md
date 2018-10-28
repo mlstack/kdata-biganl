@@ -47,6 +47,7 @@
 - Reinforcement Learning
 - Q-Learning
 - Generative Adversarial Network
+- (and more)
 
 ## Model Evaluation of [Statistics, Machine Learning, Deep Learning]
 - Cost Fuction
@@ -60,45 +61,45 @@
   - Bootstrap
 
 ## Data Management
-- - DBMS 
-- - Database Modeling
-- - MongoDB, Casandra, Redis
-- - SQL, NoSQL
+- DBMS 
+- Database Modeling
+- MongoDB, Casandra, Redis
+- SQL, NoSQL
 
 ## Data Processing
-- - connect Database
-- - read flat file(csv, tsv, txt, json, parquet, ...)
-- - make DataFrame
+- connect Database
+- read flat file(csv, tsv, txt, json, parquet, ...)
+- make DataFrame
     - R : data.Frame
     - Python : pandas
     - Scala, Java : Spark SQL
-- - Array, Matrix, Tensor
-  - Transpose
+- Array, Matrix, Tensor
 - Linear Algebra
+  - transpose
   - matrix multiplication : Weight * Festures + Bias
 - Algorithm Coding for Any Mathmatical Function
 
 ## Analytics Packages
 - Spark
-  - main :  Data Handling, Machine Learning
+  - primary :  Data Handling, Machine Learning
   - secondary :  Neural Network
   - API : Scala, Java, Python, R
 - Tensorflow
-  - main : Deep Learning
+  - primary : Deep Learning
   - secondary : machine learning
   - API : Python, Java, Javascript, R(rstudio에서 지원)
 - MXNET
-  - main : Deep Learning
+  - primary : Deep Learning
   - API : Python, R, C++, Scala, Java, Javascript
 - CNTK
-  - main : Deep Learning
+  - primary : Deep Learning
   - API : Python, CSharp, Java, C++
 - Deeplearning4j
-  - main : Deeplearning
+  - primary : Deeplearning
   - secondary : descriptive statistics
   - API(Hadoop / Spark integratted) : Java, Scala
 - Mahout 
-  - main : Machine Learning(on Hadoop)
+  - primary : Machine Learning(on Hadoop)
   - API : Java
 - (and more) Caffe, Torch, Chiner, ....
 
