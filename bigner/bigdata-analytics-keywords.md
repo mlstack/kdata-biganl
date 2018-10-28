@@ -1,5 +1,5 @@
-
-# 통계
+# Knowledge for Datascientist 
+## 통계
 - 기술통계
 - 분포
   - t, Z, F, Chi
@@ -20,7 +20,7 @@
     - Elastic-Net (regression)
   - Logistic Regression
   - (and more)
-# Machine Learning
+## Machine Learning
 - Supervised Modeling
   - Decision Tree
   - Random Forest
@@ -34,10 +34,11 @@
   - dtw
   - jaccard
   - (and more)
-# Deep Learning
+## Deep Learning
 - Perceptron
 - Single-Layer Perceptron
 - Multi-Layer Perceptron
+- Backpropagation
 - Convolutional Neural Network
 - Recurrent Neural Network
 - Long Short Term Memory
@@ -47,14 +48,38 @@
 - Q-Learning
 - Generative Adversarial Network
 
-# Model Evaluation of [Statistics, Machine Learning, Deep Learning]
+## Model Evaluation of [Statistics, Machine Learning, Deep Learning]
+- Cost Fuction
+- Evaluation for Classification
+  - Misclassification Rate, Recall,Precision, F1
+  - ROC curve
+- Evaluation for Regression
+  - MAE, MSE, RMSE, MAPE
+- Cross Validation
+  - K-Fold
+  - Bootstrap
 
-# Data Processing/Management
+## Data Management
 - DBMS 
-- SQL
 - Database Modeling
+- MongoDB, Casandra, Redis
+- SQL, NoSQL
 
-# Analytics Packages
+## Data Processing
+- connect Database
+- read flat file(csv, tsv, txt, json, parquet, ...)
+- make DataFrame
+  - R : data.Frame
+  - Python : pandas
+  - Scala, Java : Spark SQL
+- Array, Matrix, Tensor
+  - 
+- Transpose
+- Linear Algebra
+  - matrix multiplication : Weight * Festures + Biax
+- Algorithm Coding for Any Mathmatical Function
+
+## Analytics Packages
 - Spark
   - main :  Data Handling, Machine Learning
   - secondary :  Neural Network
@@ -63,7 +88,42 @@
   - main : Deep Learning
   - secondary : machine learning
   - API : Python, Java, Javascript, R(rstudio에서 지원)
+- MXNET
+  - main : Deep Learning
+  - API : Python, R, C++, Scala, Java, Javascript
+- CNTK
+  - main : Deep Learning
+  - API : Python, CSharp, Java, C++
+- (and more) Caffe, Torch, Chiner, ....
+- Deeplearning4j
+  - main : Deeplearning
+  - secondary : descriptive statistics
+  - API(Hadoop / Spark integratted) : Java, Scala
+- Mahout 
+  - main : Machine Learning(on Hadoop)
+  - API : Java
 
-# Big Data
+# Model Import/Export
+- onnx
+
+## Big Data
 - Hadoop
-- 
+- HDFS
+- Habase
+- Hive
+- Pig
+- Scoop
+- Zookeeper
+- Oozie
+- Hadoop Programming
+
+## Shell Command
+- ls, grep, 
+- vim editor
+- Compile
+  - C/C++ : make, makefile, gcc, ~.sh
+  - Java : javac, mvn, pom.xml
+  - Scala : sbt, build.sbt, build.scala
+
+## IDE Tool
+- IndelliJ, Eclipse, Visual Studio
